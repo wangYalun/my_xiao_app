@@ -1,4 +1,7 @@
 <!--home.wxml-->
+
+<import src="../template/message-item.wxml" />
+
 <view class="home">
   <view class="cover-picture">
     <image src="../../resources/cat.jpg" mode="aspectFill"></image>
@@ -15,29 +18,11 @@
     <view class="message-tips">
     </view>
     <view class="message-content">
-      <view class="message-item">
-        <view class="item-left">
-          <image src="{{userInfo.avatarUrl}}" class="item-avatar"></image>
-        </view>
-        <view class="item-right">
-          <view class="item item-nickname">
-            <text>Allen</text>
-          </view>
-          <view class="item item-content">
-            <text>this is a simple xiao qing ge~
-              感时花溅泪，恨别鸟惊心。
-              一个人的旅行，也许更有意思~
-            </text>
-          </view>
-          <view class="item item-picture"></view>
-          <view class="item item-address">深圳·大冲商务中心</view>
-          <view class="item item-time-and-from">
-            <view class="item-time">1分钟前</view>
-            <view class="item-from"></view>
-            <view class="item-panel"><image class="icon-panel" src="../../resources/icon-panel.png"></image></view>
-          </view>
-        </view>
-      </view>
+      <template is="message-item" data="{{...userInfo}}"></template>
+      <template is="message-item" data="{{...userInfo}}"></template>
+      <template is="message-item" data="{{...userInfo}}"></template>
+      <template is="message-item" data="{{...userInfo}}"></template>
+      <template is="message-item" data="{{...userInfo}}"></template>
     </view>
   </view>
 </view>
