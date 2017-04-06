@@ -1,6 +1,7 @@
 <!--home.wxml-->
 
 <import src="../template/message-item.wxml" />
+<import src="../template/picture-look.wxml" />
 
 <view class="home">
   <view class="cover-picture">
@@ -25,4 +26,5 @@
       <template is="message-item" data="{{...userInfo}}"></template>
     </view>
   </view>
+  <!--<template is="picture-look" data="{{...swiper}}"></template>-->
 </view>

@@ -93,7 +93,32 @@
   right:0;
   top:0;
 }
+.panel-button{
+  position: absolute;
+  right:46rpx;
+  top:-26rpx;
+  background-color: #333;
+  height: 80rpx;
+  width:360rpx;
+  color:#fff;
+  border-radius: 10rpx;
+  line-height: 80rpx;
+  text-align: center;
+  padding:10rpx;
+  display: none;
+}
 .item-panel .icon-panel{
   width:40rpx;
   height:28rpx;
+}
+
+
+/*图片放大查看接口*/
+.picture-look{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top:0;
+  left: 0;
+  background-color: #000;
 }

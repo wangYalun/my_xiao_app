@@ -1,0 +1,13 @@
+<!--图片查看器-->
+<template name="picture-look">
+    <view class="picture-look">
+        <swiper style="height:100%" indicator-dots="true" 
+        indicator-color="#aaa" indicator-active-color="#fff" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+        <block wx:for="{{imgUrls}}">
+            <swiper-item style="display: flex;align-items: center;">
+                <image src="{{item}}" mode="widthFix" style="width:100%"/>
+            </swiper-item>
+        </block>
+    </swiper>
+    </view>
+</template>

@@ -25,7 +25,17 @@
       <view class="item item-time-and-from">
         <view class="item-time">1分钟前</view>
         <view class="item-from"></view>
-        <view class="item-panel">
+        <view class="item-panel" bindtap="tapPanel">
+          <view class="panel-button">
+            <view style="display:inline-block;border-right:1px solid #aaa">
+              <image class="icon-panel"></image>
+              <text>赞</text>
+            </view>
+            <view style="display:inline-block;">
+              <image class="icon-panel"></image>
+              <text>评论</text>
+            </view>
+          </view>
           <image class="icon-panel" src="../../resources/icon-panel.png"></image>
         </view>
       </view>
